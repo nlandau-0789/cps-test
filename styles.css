@@ -1,0 +1,20 @@
+* {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#clicker {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    color: unset;
+    background-color: #ff9999;
+    display: grid;
+    font-size: 8em;
+    place-items: center;
+    user-select: none;
+}
