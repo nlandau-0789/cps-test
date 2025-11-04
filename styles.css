@@ -12,9 +12,13 @@
     left: 0;
     position: fixed;
     color: unset;
-    background-color: #ff9999;
+    --end-color: oklab(0.695 0.179 0.078); 
+    --start-color: oklab(0.884 -0.194 0.145); 
+    --progress: 0;
+    background-color: color-mix(in oklab, var(--start-color) calc(var(--progress)*100%), var(--end-color));
     display: grid;
     font-size: 8em;
     place-items: center;
     user-select: none;
+    transition: background-color 0.1s ease;
 }
